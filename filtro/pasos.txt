@@ -1,0 +1,2 @@
+1. solicitar nombre al usuario
+2. hacer 3 funciones: 1 saludar 2 charlar 3 despedir
