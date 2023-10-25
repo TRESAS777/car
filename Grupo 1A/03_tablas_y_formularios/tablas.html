@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button><a href=".">Volver</a></button>
+    <center>
+        <h1>Tablas en HTML</h1>
+    </center>
+
+    <h2>Estructura basica de una tabla</h2>
+    <table border="1">
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>Producto 2</td>
+            <td>Producto 3</td>
+            <td>Producto 4</td>
+            <td>Producto 5</td>
+        </tr>
+    </table>
+
+    <h2>Estructura de una tabla completa</h2>
+    <table border="1">
+        <thead>
+            <th>Titulo 1</th>
+            <th>Titulo 2</th>
+            <th>Titulo 3</th>
+            <th>Titulo 4</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Definicion titulo 1</td>
+                <td>Definicion titulo 2</td>
+                <td>Definicion titulo 3</td>
+                <td>Definicion titulo 4</td>
+            </tr>
+            <tr>
+                <td>Definicion titulo 1</td>
+                <td>Definicion titulo 2</td>
+                <td>Definicion titulo 3</td>
+                <td>Definicion titulo 4</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Total2</td>
+                <td colspan="3">3</td>
+            </tr>
+        </tfoot>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tabla personalizada</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Especie</th>
+                <th>#</th>
+                <th>Imagen</th>
+                <th>Nombre mascota</th>
+                <th>Video</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Perros</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="img/img5.avif" 
+                    alt="Imagen de mascota" 
+                    height="100"/>
+                </td>
+                <td colspan="2">Sorner</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="img/img6.avif" alt="Imagen de mascota"></td>
+                <td>Flipy</td>
+                <td><video src="./img/video.mp4" height="100" controls autoplay muted></video></td>
+            </tr>
+            <tr>
+                <td>
+                    <table> 
+                        <tr>
+                            <td>fg</td>
+                            <td>fg</td>
+                    </tr>
+                    </table>   
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
