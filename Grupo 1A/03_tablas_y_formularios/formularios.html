@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <button><a href=".">Volver</a></button>
+    <h1>Formularios</h1>
+
+    <form action="index.html" accept-charset="UTF-8">
+        <h2>Encuesta</h2>
+
+        <div>
+            <label for="Nombre completo">Nombre completo</label>
+            <input type="text" name="Nombre completo" id="Nombre completo" placeholder="ejm: pepito" required />
+        </div>
+        <br/>
+        <div>
+            <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+            <input 
+            type="date" 
+            name="Fecha de nacimiento" 
+            id="Fecha de nacimiento" 
+            required 
+            />
+        </div>
+        <br/>
+        <div>
+            <label for="Edad">Edad</label>
+            <input 
+            type="number" 
+            name="Edad" 
+            id="Edad" 
+            min="0" 
+            required 
+            />
+        </div>
+        <br/>
+        <fieldset>
+            <legend>Otras preguntas</legend>
+            <label for="Estado civil">Estado civil:</label><br/>
+            <input 
+            type="radio" 
+            value="casado" 
+            name="Estado civil" 
+            id="Estado civil" 
+            /> casado
+            <input 
+            type="radio" 
+            value="soltero" 
+            name="Estado civil" 
+            id="Estado civil" 
+            /> soltero
+            <input 
+            type="radio" 
+            value="union libre" 
+            name="Estado civil" i
+            d="Estado civil" 
+            /> union libre
+            <br/>
+            <label for="Genero">Genero:</label>
+            <select name="genero" id="genero">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+            <br/>
+
+        </fieldset>
+        <!-- Una forma de enviar -->
+        <!-- <input type="submit" value="Enviar"> -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
