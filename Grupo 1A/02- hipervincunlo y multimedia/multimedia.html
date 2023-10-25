@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <button><a href="./index.html">Volver</a></button>
+
+    <center>
+        <h1>Multimedia</h1>
+    </center><hr />
+
+    <hr />
+    <center>
+        <h1>Imagenes</h1>
+    </center>
+    <h2>importar imagenes</h2>
+    <img src="./img/img1.avif" alt="Imagen de perrito" height="200px"/>
+    <img src="img/img2.avif" alt="" height="200px">
+    <img src="img/img3.avif" alt="" height="200px">
+    <img src="img/img4.avif" alt="" height="200px">
+    <img src="img/img5.avif" alt="" height="200px">
+    <img src="img/img6.avif" alt="" height="200px">
+    <h2>importar imagenes externas</h2>
+    <img 
+    src="https://img.freepik.com/free-vector/cryptocurrency-bitcoin-golden-coin-background_1017-31505.jpg?t=st=1698155632~exp=1698156232~hmac=5d8fff2def6a3dbab8dfb68332857308c923a649b2a74081610cdd2c03d0a57b"
+    alt="Bitcoin"
+    height="200px"
+    loading="lazy"
+    />
+
+    <h2>Etiqueta figure con leyenda</h2>
+    <figure>
+        <img src="img/img1.avif" alt="Imagen de perrito" height="200px"/>
+        <figcaption>Perrito Bulldog Frances</figcaption>
+    </figure>
+
+    <h2>Importar gifts</h2>
+    <img src="img/giphy.gif" alt="Esto es un gift" height="200px"/>
+    <hr />
+    <center>
+        <h1>Videos</h1>
+    </center>
+    <h2>Importar video</h2>
+    <video src="img/video.mp4" poster="img/img2.avif" controls loop height="200px" ></video>
+
+    <h2>Video auto reproducir</h2>
+    <video src="img/video.mp4" height="200px" controls loop autoplay ></video>
+
+    <h2>Video sin sonido</h2>
+    <video src="img/video.mp4" height="200px"  muted autoplay controls loop></video>
+
+    <h2>Importar videos de YouTube</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/aBvhm3r4-q4?si=2rGzO7F5pDHprvLV" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>Videos con subtitulos</h2>
+    <video src="img/video.mp4" height="200px" controls autoplay muted loop>
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"/> 
+        <track src="subtitulosEn.vtt" kind="subtitles" srclang="en" label="Ingles"/> 
+    </video>
+
+    <h2>Importar un audio</h2>
+    <audio src="./img/audio.mp3" controls></audio>
+
+    <h2>Importar un audio con autoreproduccion</h2>
+    <audio src="./img/audio.mp3" controls autoplay muted loop></audio>
+
+</body>
+</html>
