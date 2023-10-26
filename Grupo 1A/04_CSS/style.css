@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Bebas+Neue&family=Dancing+Script&family=Nosifer&family=Sedgwick+Ave+Display&family=Sometype+Mono:ital@1&display=swap');
+* {
+    font-family: 'Sometype Mono', monospace;
+}
+/* body {
+    background-color: red;
+} */
+
+.titulo {
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-align: center;
+    font-size: 32pt;
+    color: #666;
+    text-shadow: 10px 10px 10px  #535;
+    text-transform: initial;
+}
+
+.container-cards {
+
+    /* border: 1px solid #000; */
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    /* justify-content: space-around;
+    align-items: center; */
+    padding: 10px;
+    /* box-sizing: border-box; */
+    display: inline-flex;
+}
+
+.container-cards .tarjeta {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #333;
+    padding: 10px;
+    width: fit-content;
+    /* background-color: #e3e3e390;  el 90 es para definir la trasparencia en hexadecimal*/
+    background-color: #e3e3e3;
+}
+
+.container-cards .tarjeta .titulo_tarjeta {
+    color: #222;
+}
+.container-cards .tarjeta .d-block span {
+    display: block;
+}
+.container-cards .tarjeta:nth-child(1) {
+    margin-right: 20px;
+}
