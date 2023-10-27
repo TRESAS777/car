@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Bebas+Neue&family=Dancing+Script&family=Nosifer&family=Sedgwick+Ave+Display&family=Sometype+Mono:ital@1&display=swap');
+* {
+    font-family: 'Sometype Mono', monospace;
+}
+/* body {
+    background-color: red;
+} */
+
+.titulo {
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-align: center;
+    font-size: 32pt;
+    color: #666;
+    text-shadow: 10px 10px 10px  #535;
+    text-transform: initial;
+}
+
+.container-cards {
+
+    /* border: 1px solid #000; */
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    /* justify-content: space-around;
+    align-items: center; */
+    padding: 10px;
+    /* box-sizing: border-box; */
+    display: inline-flex;
+}
+
+.container-cards .tarjeta {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #333;
+    padding: 10px;
+    width: fit-content;
+    /* background-color: #e3e3e390;  el 90 es para definir la trasparencia en hexadecimal*/
+    background-color: #e3e3e3;
+}
+
+.container-cards .tarjeta .titulo_tarjeta {
+    color: #222;
+}
+.container-cards .tarjeta .d-block span {
+    display: block;
+}
+.container-cards .tarjeta:nth-child(1) {
+    margin-right: 20px;
+}
+
+.contenedor_cajas {
+    /* habilita felxbox a los hijos de este contenedor */
+    display: flex;
+    /* toma todo el ancho posible de la pantalla */
+    width: 100%;
+    /* justify-content: center; centra el contenido horizontalmente */
+    justify-content: center;
+    /* justifica los elementos del sistema para que tengan la misma medida de separacion */
+    justify-content: space-between;
+    /* justifica el contenido con una misma separacion y ademas con una separacion en las esquinas del contenedor */
+    justify-content: space-around;
+    /* justifica los elementos con una misma separacion muy simetrica */
+    justify-content: space-evenly;
+
+    justify-content: center;
+    /* gap solo se puede usar si usamos displayflex y sirve para aplicar separacion de elementos */
+    gap: 30px;
+
+    flex-wrap: wrap;
+    /* flex direction cambia la direccion y row reverse invierte en horizontal */
+    flex-direction: row-reverse;
+    /* colum cambia la direccion colocando a todos en columna */
+    flex-direction: column;
+    /* invierte el orden de la columna */
+    flex-direction: column-reverse;
+}
+.contenedor_cajas .caja {
+    /* ancho de 100px a la caja */
+    width: 100px;
+    /* alto de 100px a la caja */
+    height: 100px;
+    /* fondo rojo  */
+    background-color: red;
+    /* borde de 10px de ancho solido y color negro a las cajas */
+    border: 5px solid black;
+    /* coloco un color pastel a las letras */
+    color: #EAEAEA;
+    /* coloco un tamaño de fuente de 24px */
+    font-size: 24px;
+    /* a la letra la pongo en negrita */
+    font-weight: bolder;
+    /* utilizo flexbox para centrar mi contenido horizontalmente y verticalmente */
+    display: flex;
+    /* centra el contenido de las cajas horizontal */
+    justify-content: center;
+    /* centra el contenido de las cajas vertical */
+    align-items: center;
+
+    margin: 20px;
+}
+
