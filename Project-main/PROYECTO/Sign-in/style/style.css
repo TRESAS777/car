@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: #b2abf0;
+    font-size: 16px;
+}
+
+
+body {
+    display: flex;
+    background-color: blue;
+}
+
+.login_content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 90vh;
+    background-image: url(image/fondo.jpg);
+    background-size: cover;
+    margin: 5vh;
+}
+
+.login_content .margin {
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaeaeb;
+}
+
+.login_content .margin .logo {
+    width: 100%;
+    height: 100%;
+}
+
+.login_content .margin .logo img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.login_content .margin .margin_login {
+    display: grid;
+    width: 100%;
+    background-color: aqua;
+}
+
+.login_content .margin .margin_login .login{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.login_content .margin .margin_login .login #password,.login_content .margin .margin_login .login #user {
+    width: 100%;
+}
+
+.login_content .margin .margin_login input{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 27px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    border: 0px;
+    width: 100%;
+}
+
+.login_content .margin .margin_login .login i, .login_content .margin .margin_login .password i {
+    color: #181e4a;
+    position: absolute;
+    padding: 14px;
+}
+
+.login_content .margin .margin_login .login .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09012c;
+    color: #b2abf0;
+    border-radius: 20px;
+    font-size: 100%;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.prueba {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+.prueba .usuario{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.prueba .usuario #login{
+    width: 90%;
+}
