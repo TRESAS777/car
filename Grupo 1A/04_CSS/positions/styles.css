@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: 100%;
+    background-color: black;
+}
+
+
+.contenedor {
+    background-color: aqua;
+    height: 50vh;
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    /* top: 50%; alinea el contenido por debajo*/
+
+    /* right: 0; lo alinea a la derecha de la pantalla*/
+}
+
+.item::before {
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    background-color: blueviolet;
+    bottom: 0;
+    transition: .3s;
+}
+
+.item:hover::before {
+    width: 100px;
+
+}
+.btn_wp {
+    border-radius: 100%;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #25d366;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn_wp i {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.btn_wp:hover {
+    transform: scale(1.5);
+}

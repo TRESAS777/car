@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Sedgwick+Ave+Display&display=swap');
+
+:root {
+    --primary: #1d2b3a;
+    --secondary: #00bfc4;
+    --degraded: rgba(255, 255, 255,0.25);
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px; /* separacion que podemos usar en el display flex */
+    background: var(--primary);
+}
+
+.inputBox {
+    width: 250px;
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--degraded);
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background: var(--primary);
+    font-size: 14px;
+    transition: .5s;
+}
+
+.inputBox span {
+    position: absolute; /*jugar con el dentro de la caja*/
+    left: 0; /*alinearlo a la izquierda de la caja*/
+    padding: 10px;/*margen dentro de la caja*/
+    color:  var(--degraded);/*aplica los colores rgb y ademas aplica una transparencia*/
+    text-transform: uppercase;/*transforma el texto en mayuscula*/
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+ .inputBox input:focus~span {
+    color: var(--secondary);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 10px;
+    background-color: var(--primary);
+    padding: 0 10px;/*paddin de 0 en horizontal y 10 de vertical*/
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
+    letter-spacing: .3;
+}
+
+.inputBox input:active, 
+.inputBox input:focus {
+    border: 1px solid var(--secondary);
+}
+.inputBox:nth-child(2) input:valid~span,
+.inputBox:nth-child(2) input:focus~span {
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 10px;
+}
